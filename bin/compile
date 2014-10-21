@@ -173,7 +173,12 @@ sub-env $BIN_DIR/steps/collectstatic
 
 apt-get update
 apt-get install xvfb -y
+apt-get install libpango1.0-0
+apt-get install libappindicator1
+apt-get install xdg-utils
 
+wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
 # ### Finalize
 #
 
